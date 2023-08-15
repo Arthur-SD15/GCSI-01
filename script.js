@@ -21,5 +21,6 @@ document.getElementById('calculateBtn').addEventListener('click', function() {
         bmiCategory = 'Obesidade';
     }
 
-    console.log(bmiCategory)
+    const resultText = `Seu IMC é ${bmiFormatted} (${bmiCategory}).`;
+    document.getElementById('result').innerHTML = resultText;
 });
