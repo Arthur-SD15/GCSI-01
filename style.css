@@ -46,3 +46,9 @@ input[type="number"] {
 #result{
     margin-top: 10px;
 }
+
+@media (max-width: 1200px) {
+    img {
+        display: none;
+    }
+}
