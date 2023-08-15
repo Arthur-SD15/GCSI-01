@@ -10,5 +10,16 @@ document.getElementById('calculateBtn').addEventListener('click', function() {
     const bmi = weight / (height * height);
     const bmiFormatted = bmi.toFixed(2);
 
-    console.log(bmiFormatted)
+    let bmiCategory = '';
+    if (bmi < 18.5) {
+        bmiCategory = 'Abaixo do peso';
+    } else if (bmi < 24.9) {
+        bmiCategory = 'Peso normal';
+    } else if (bmi < 29.9) {
+        bmiCategory = 'Sobrepeso';
+    } else {
+        bmiCategory = 'Obesidade';
+    }
+
+    console.log(bmiCategory)
 });
