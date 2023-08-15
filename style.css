@@ -42,3 +42,7 @@ input[type="number"] {
     margin: 10px 0;
     font-size: medium;
 }
+
+#result{
+    margin-top: 10px;
+}
